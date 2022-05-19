@@ -2,7 +2,7 @@
   "name": "test_0519",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jjieunyun/test_0519.git",
+  "homepage": "https://jjieunyun.github.io/test_0519/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
