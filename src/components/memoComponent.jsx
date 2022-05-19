@@ -4,7 +4,7 @@ class MemoComponent extends Component {
     state = {
         todoList : [
         { id : 1 , text : 'running', isActive: true},
-            { id : 2 , text : 'coding', isActive: true},
+            { id : 2 , text : '두번째 메모', isActive: true},
         ],
         title : ['T','O','D','O',' ',' ','L','I','S','T'],
     }
@@ -34,7 +34,18 @@ class MemoComponent extends Component {
     }
 
     handleCheckTodo = (payload) => {
+        const id = payload;
+        this.state.todoList.find(todo => {
+            if(todo.id === id) {
 
+                todo.isActive = !todo.isActive
+            }
+            return console.log(todo.isActive);
+        })
+        const todoList = this.state.todoList.map(todo => {
+            return todo
+        });
+        this.setState({ todoList })
 
 
         // const id = payload;
@@ -49,9 +60,9 @@ class MemoComponent extends Component {
         //     return todo.id !== id
         // });
         
-        const updateCheck = [...this.state.todoList]
+        
 
-        this.setState({todoList : updateCheck})
+        
     }
 
     render() {
@@ -74,8 +85,10 @@ class MemoComponent extends Component {
                     {this.state.todoList.map(todo => {
                         return (
                             <div className='todoList' key={todo.id}>
-                                    <div onClick={()=> this.handleCheckTodo(todo.id)} className='todo-checkbox'/>
-                                <li /*</div>className={ this.state.todoList[todo.id-1].isActive ? 'todoList-text-before' : 'todoList-text-after' }*/>{todo.text}</li>
+                                    <div onClick={()=> this.handleCheckTodo(todo.id)} 
+                                    className={ todo.isActive ? 'todo-checkbox' : 'todo-checkbox-full' }
+                                    />
+                                <li className={ todo.isActive ? 'todoList-text-before' : 'todoList-text-after' }>{todo.text}</li>
                                 <button className='todoList-deleteButton'
                                         onClick={()=>this.handleDeleteTodo(todo.id)}
                                     >x</button>

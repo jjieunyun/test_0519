@@ -54,7 +54,11 @@ input::placeholder {
   border-radius: 50%;
 }
 
-.todo-checkbox:hover {
+.todo-checkbox-full {
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightslategray;
+  border-radius: 50%;
   background-color: black;
 }
 
