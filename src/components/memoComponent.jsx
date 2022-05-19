@@ -33,6 +33,7 @@ class MemoComponent extends Component {
         
     }
 
+    //⭐Todo 체크
     handleCheckTodo = (payload) => {
         const id = payload;
         this.state.todoList.find(todo => {
@@ -46,23 +47,7 @@ class MemoComponent extends Component {
             return todo
         });
         this.setState({ todoList })
-
-
-        // const id = payload;
-        // const changeTodo = this.state.todoList.find(todo => {
-        //     return todo.id === id
-        // })
-        // changeTodo.isActive = !changeTodo.isActive
-
-        // // const text = this.state.todoList[id-1].text;
-        // // const isActive = !this.state.todoList[id-1].isActive;
-        // const todoList = this.state.todoList.filter(todo => {
-        //     return todo.id !== id
-        // });
-        
-        
-
-        
+  
     }
 
     render() {
