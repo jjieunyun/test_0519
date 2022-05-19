@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/jjieunyun/test_0519.git/static/css/main.47dad69f.css",
-    "main.js": "/jjieunyun/test_0519.git/static/js/main.80fc54f6.js",
-    "index.html": "/jjieunyun/test_0519.git/index.html",
-    "main.47dad69f.css.map": "/jjieunyun/test_0519.git/static/css/main.47dad69f.css.map",
-    "main.80fc54f6.js.map": "/jjieunyun/test_0519.git/static/js/main.80fc54f6.js.map"
+    "main.css": "/test_0519/static/css/main.47dad69f.css",
+    "main.js": "/test_0519/static/js/main.80fc54f6.js",
+    "index.html": "/test_0519/index.html",
+    "main.47dad69f.css.map": "/test_0519/static/css/main.47dad69f.css.map",
+    "main.80fc54f6.js.map": "/test_0519/static/js/main.80fc54f6.js.map"
   },
   "entrypoints": [
     "static/css/main.47dad69f.css",
