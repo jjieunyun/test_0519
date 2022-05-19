@@ -4,7 +4,7 @@ class MemoComponent extends Component {
     state = {
         todoList : [
         { id : 1 , text : 'running', isActive: true},
-            { id : 2 , text : '두번째 메모', isActive: true},
+            { id : 2 , text : 'coding', isActive: true},
         ],
         title : ['T','O','D','O',' ',' ','L','I','S','T'],
     }
